@@ -34,4 +34,4 @@
 
 | Моя реализация| Не моя реализация |
 | :---: | :---: |
-|![](my_implementation.gif) | ![](not my implementation.gif) |
+|![](my_implementation.gif) | ![](not_my_implementation.gif) |
