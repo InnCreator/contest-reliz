@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Reliz</string>
+    <string name="screen_1_pop_up">Screen 1 Pop-Up</string>
+    <string name="screen_1">Screen 1</string>
+    <string name="screen_2">Screen 2</string>
+    <string name="screen_3">Screen 3</string>
+    <string name="screen_4">Screen 4</string>
+    <string name="menu">Menu</string>
+</resources>

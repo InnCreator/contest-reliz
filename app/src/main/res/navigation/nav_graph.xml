@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/menuFragment">
+
+    <include app:graph="@navigation/screen_graph"/>
+
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="ru.inncreator.contest.reliz.fragments.MenuFragment"
+        android:label="MenuFragment"
+        tools:layout="@layout/fragment_menu">
+        <action
+            android:id="@+id/action_menuFragment_to_screen1Fragment"
+            app:destination="@id/screen_graph"
+            app:enterAnim="@anim/slide_below_to_center"
+            app:exitAnim="@anim/slide_center_to_top"
+            app:popEnterAnim="@anim/slide_top_to_center"
+            app:popExitAnim="@anim/slide_center_to_below" />
+    </fragment>
+
+</navigation>

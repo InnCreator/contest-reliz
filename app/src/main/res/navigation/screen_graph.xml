@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/screen_graph"
+    app:startDestination="@id/screen1Fragment">
+
+    <fragment
+        android:id="@+id/screen1Fragment"
+        android:name="ru.inncreator.contest.reliz.fragments.Screen1Fragment"
+        android:label="Screen1Fragment"
+        tools:layout="@layout/fragment_screen1">
+        <action
+            android:id="@+id/action_screen1Fragment_to_screen2Fragment"
+            app:destination="@id/screen2Fragment"
+            app:enterAnim="@anim/slide_below_to_center"
+            app:exitAnim="@anim/slide_center_to_top"
+            app:popEnterAnim="@anim/slide_top_to_center"
+            app:popExitAnim="@anim/slide_center_to_below"
+            app:popUpTo="@id/menuFragment" />
+        <action
+            android:id="@+id/action_screen1Fragment_to_screen3Fragment"
+            app:destination="@id/screen3Fragment"
+            app:enterAnim="@anim/slide_below_to_center"
+            app:exitAnim="@anim/slide_center_to_top"
+            app:popEnterAnim="@anim/slide_top_to_center"
+            app:popExitAnim="@anim/slide_center_to_below"
+            app:popUpTo="@id/menuFragment" />
+        <action
+            android:id="@+id/action_screen1Fragment_to_screen4Fragment"
+            app:destination="@id/screen4Fragment"
+            app:enterAnim="@anim/slide_below_to_center"
+            app:exitAnim="@anim/slide_center_to_top"
+            app:popEnterAnim="@anim/slide_top_to_center"
+            app:popExitAnim="@anim/slide_center_to_below"
+            app:popUpTo="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/screen2Fragment"
+        android:name="ru.inncreator.contest.reliz.fragments.Screen2Fragment"
+        android:label="Screen2Fragment"
+        tools:layout="@layout/fragment_screen2" >
+        <action
+            android:id="@+id/action_screen2Fragment_to_screen1Fragment"
+            app:destination="@id/screen1Fragment"
+            app:enterAnim="@anim/slide_below_to_center"
+            app:exitAnim="@anim/slide_center_to_top"
+            app:popEnterAnim="@anim/slide_top_to_center"
+            app:popExitAnim="@anim/slide_center_to_below"
+            app:popUpTo="@id/menuFragment" />
+        <action
+            android:id="@+id/action_screen2Fragment_to_screen3Fragment"
+            app:destination="@id/screen3Fragment"
+            app:enterAnim="@anim/slide_below_to_center"
+            app:exitAnim="@anim/slide_center_to_top"
+            app:popEnterAnim="@anim/slide_top_to_center"
+            app:popExitAnim="@anim/slide_center_to_below"
+            app:popUpTo="@id/menuFragment" />
+        <action
+            android:id="@+id/action_screen2Fragment_to_screen4Fragment"
+            app:destination="@id/screen4Fragment"
+            app:enterAnim="@anim/slide_below_to_center"
+            app:exitAnim="@anim/slide_center_to_top"
+            app:popEnterAnim="@anim/slide_top_to_center"
+            app:popExitAnim="@anim/slide_center_to_below"
+            app:popUpTo="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/screen3Fragment"
+        android:name="ru.inncreator.contest.reliz.fragments.Screen3Fragment"
+        android:label="Screen3Fragment"
+        tools:layout="@layout/fragment_screen3" >
+        <action
+            android:id="@+id/action_screen3Fragment_to_screen2Fragment"
+            app:destination="@id/screen2Fragment"
+            app:enterAnim="@anim/slide_below_to_center"
+            app:exitAnim="@anim/slide_center_to_top"
+            app:popEnterAnim="@anim/slide_top_to_center"
+            app:popExitAnim="@anim/slide_center_to_below"
+            app:popUpTo="@id/menuFragment"/>
+        <action
+            android:id="@+id/action_screen3Fragment_to_screen1Fragment"
+            app:destination="@id/screen1Fragment"
+            app:enterAnim="@anim/slide_below_to_center"
+            app:exitAnim="@anim/slide_center_to_top"
+            app:popEnterAnim="@anim/slide_top_to_center"
+            app:popExitAnim="@anim/slide_center_to_below"
+            app:popUpTo="@id/menuFragment" />
+        <action
+            android:id="@+id/action_screen3Fragment_to_screen4Fragment"
+            app:destination="@id/screen4Fragment"
+            app:enterAnim="@anim/slide_below_to_center"
+            app:exitAnim="@anim/slide_center_to_top"
+            app:popEnterAnim="@anim/slide_top_to_center"
+            app:popExitAnim="@anim/slide_center_to_below"
+            app:popUpTo="@id/menuFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/screen4Fragment"
+        android:name="ru.inncreator.contest.reliz.fragments.Screen4Fragment"
+        android:label="Screen4Fragment"
+        tools:layout="@layout/fragment_screen4" >
+        <action
+            android:id="@+id/action_screen4Fragment_to_screen2Fragment"
+            app:destination="@id/screen2Fragment"
+            app:enterAnim="@anim/slide_below_to_center"
+            app:exitAnim="@anim/slide_center_to_top"
+            app:popEnterAnim="@anim/slide_top_to_center"
+            app:popExitAnim="@anim/slide_center_to_below"
+            app:popUpTo="@id/menuFragment"/>
+        <action
+            android:id="@+id/action_screen4Fragment_to_screen1Fragment"
+            app:destination="@id/screen1Fragment"
+            app:enterAnim="@anim/slide_below_to_center"
+            app:exitAnim="@anim/slide_center_to_top"
+            app:popEnterAnim="@anim/slide_top_to_center"
+            app:popExitAnim="@anim/slide_center_to_below"
+            app:popUpTo="@id/menuFragment"/>
+        <action
+            android:id="@+id/action_screen4Fragment_to_screen3Fragment"
+            app:destination="@id/screen3Fragment"
+            app:enterAnim="@anim/slide_below_to_center"
+            app:exitAnim="@anim/slide_center_to_top"
+            app:popEnterAnim="@anim/slide_top_to_center"
+            app:popExitAnim="@anim/slide_center_to_below"
+            app:popUpTo="@id/menuFragment"/>
+    </fragment>
+
+</navigation>
